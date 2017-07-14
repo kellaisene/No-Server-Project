@@ -4,11 +4,13 @@ import {Route, Link} from 'react-router-dom';
 // import './Recipe.css';
 
 export function Kind(props) {
-    const kind = getKind(props.match.params.kind_id);
+    const kind = getKind(props.match.params.recipe_id);
+    console.log(props)
     return (
         <div>
             <img src={kind.image} />
             <h1>{kind.name}</h1>
+            <p>{kind.description}</p>
             <Link to='/recipe'>Back</Link>
             </div>
 
@@ -18,8 +20,9 @@ export function Kind(props) {
 function RecipeBook(props) {
     const kinds = getRecipe().map((kind, i) => (
         <div key={i}>
-            <Link to={`/recipe/${kind.id}`}>
+            <Link to={`/recipes/${kind.id}`}>
                 {kind.name}
+                
                 </Link>
                 </div>
     ))

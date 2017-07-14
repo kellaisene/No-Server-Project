@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  // background-image: url(https://cdn2.bigcommerce.com/server400/b83eb/images/stencil/original/products/408/643/cacao_alkalized__33276.1373398311.JPG?c=2);
+  // background-size: cover;
 }
 
 .App-logo {
@@ -13,11 +15,17 @@
   padding: 20px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: burlywood;
+  background-color: #5e3c10;
+  
 }
 
 .App-intro {
   font-size: large;
+}
+
+.Nav-bar {
+  font-size: 50px;
+  color: white;
 }
 
 @keyframes App-logo-spin {
