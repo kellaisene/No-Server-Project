@@ -1,0 +1,23 @@
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-image: url(http://www.thecoconet.tv/assets/sm/upload/i3/gr/wh/gj/blobid0.jpg);
+  height: 280px;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: burlywood; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
