@@ -10,12 +10,13 @@
 }
 
 .App-header {
-  background-image: url(http://www.thecoconet.tv/assets/sm/upload/i3/gr/wh/gj/blobid0.jpg);
-  height: 280px;
+  background-image: url(http://www.kingkoko.com/images/logo%20small%203.png);
+  height: 150px;
   padding: 20px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #5e3c10;
+  background-color: black;
+  // http://www.thecoconet.tv/assets/sm/upload/i3/gr/wh/gj/blobid0.jpg
   
 }
 
@@ -24,8 +25,21 @@
 }
 
 .Nav-bar {
+  display: flex;
+  justify-content: space-around;
   font-size: 50px;
-  color: white;
+  border: 5px;
+  border-color: black;
+  background: #f0b7a1;
+  background: -moz-linear-gradient(top, #f0b7a1 0%, #8c3310 20%, #bf6e4e 53%, #bf6e4e 53%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 20%,#bf6e4e 53%,#bf6e4e 53%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f0b7a1 0%,#8c3310 20%,#bf6e4e 53%,#bf6e4e 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: 800;
+  padding: 15px;
+  text-shadow: 1px 1px black;
+  
 }
 
 @keyframes App-logo-spin {

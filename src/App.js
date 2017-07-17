@@ -5,19 +5,18 @@ import About from './About';
 import Recipe, {Kind} from './Recipe';
 
 
+
 class App extends Component {
   render() {
     return (
       <HashRouter>
       <div className="App">
         <div className="App-header">
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
-          {/*<h2>Welcome to React</h2>*/}
+          
         </div>
         
-        {/*<p className="App-intro">
-          <h1>All things Koko Samoa</h1>
-        </p>*/}
+        
+        
         <div className="Nav-bar">
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>

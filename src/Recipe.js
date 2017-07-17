@@ -5,21 +5,33 @@ import {Route, Link} from 'react-router-dom';
 
 export function Kind(props) {
     const kind = getKind(props.match.params.recipe_id);
+
+    const array = kind.description.split(", ");
+    const description = array.map((ingredient, i) => (
+        <p className="ingredients" key={i}>{ingredient}</p>
+    ))
+    
+
     console.log(props)
     return (
-        <div>
+        <div className='recipe_list'>
+            
             <img src={kind.image} />
-            <h1>{kind.name}</h1>
-            <p>{kind.description}</p>
-            <Link to='/recipe'>Back</Link>
+            <div className="box">
+            <h1 className="name_recipe">{kind.name}</h1>
+           {description}
+           
+            <Link to='/recipes'><button>Back</button></Link>
             </div>
+            </div>
+            
 
     )
 }
 
 function RecipeBook(props) {
     const kinds = getRecipe().map((kind, i) => (
-        <div key={i}>
+        <div className="recipe_links" key={i}>
             <Link to={`/recipes/${kind.id}`}>
                 {kind.name}
                 
@@ -38,8 +50,8 @@ export default function Recipe(props) {
     console.log(props.match.isExact ? 'Is exact' : 'is not exact');
 
     return (
-        <div>
-            <h1>Recipes</h1>
+        <div className="recipe_page">
+            <h1 className="recipe_header">Recipes</h1>
             <RecipeBook />
             </div>
     )
