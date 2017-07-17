@@ -16,12 +16,12 @@ export function Kind(props) {
     return (
         <div className='recipe_list'>
             
-            <img src={kind.image} />
+            <img className="pic_box" src={kind.image} />
             <div className="box">
             <h1 className="name_recipe">{kind.name}</h1>
            {description}
            
-            <Link to='/recipes'><button>Back</button></Link>
+            <Link to='/recipes'><button className="button_box">Back</button></Link>
             </div>
             </div>
             
@@ -51,8 +51,10 @@ export default function Recipe(props) {
 
     return (
         <div className="recipe_page">
+            <div className="motherbox_recipe">
             <h1 className="recipe_header">Recipes</h1>
             <RecipeBook />
+            </div>
             </div>
     )
 }

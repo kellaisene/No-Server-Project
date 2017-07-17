@@ -1,13 +1,14 @@
 .Home-page {
     width: 100%;
     height: 800px;
-    background-size: inherit;
-    background-position-y: 250px;
-    background-position-x: 430px;
+    background-size: cover;
+    // background-position-y: 250px;
+    // background-position-x: 430px;
     background-repeat: no-repeat;
     background-color:black;
-    background-image: url(http://ozoutback.com.au/Samoa/people/slides/1985050815.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Three_Samoan_chiefs_including_two_orators_-_unknown_photographer_and_date.jpg/1200px-Three_Samoan_chiefs_including_two_orators_-_unknown_photographer_and_date.jpg);
     // background-image: url(http://www.freewebs.com/lindartw/WSsavai10.jpg);
+    // http://ozoutback.com.au/Samoa/people/slides/1985050815.jpg
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -26,7 +27,7 @@
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 70px;
     text-shadow: 2px 2px black;
-    padding: 10px;
+    // padding: 10px;
 }
 
 p {

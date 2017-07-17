@@ -87,12 +87,10 @@ table {
 .Home-page {
   width: 100%;
   height: 800px;
-  background-size: inherit;
-  background-position-y: 250px;
-  background-position-x: 430px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
-  background-image: url(http://ozoutback.com.au/Samoa/people/slides/1985050815.jpg);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Three_Samoan_chiefs_including_two_orators_-_unknown_photographer_and_date.jpg/1200px-Three_Samoan_chiefs_including_two_orators_-_unknown_photographer_and_date.jpg);
   display: flex;
   align-items: center;
   flex-direction: column; }
@@ -106,8 +104,7 @@ table {
   color: white;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 70px;
-  text-shadow: 2px 2px black;
-  padding: 10px; }
+  text-shadow: 2px 2px black; }
 
 p {
   color: white;
@@ -124,8 +121,18 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-color: gray;
-  background-image: url(http://microaidinternational.org/WP/wp-content/uploads/2012/04/koko-beans-in-mortar1.jpg);
-  padding-top: 20px; }
+  background-image: url(http://microaidinternational.org/WP/wp-content/uploads/2012/04/koko-beans-in-mortar1.jpg); }
+
+.motherbox_recipe {
+  width: 100%;
+  height: 1000px;
+  background: rgba(255, 255, 255, 0.3); }
+
+.pic_box {
+  box-shadow: 4px 4px; }
+
+.button_box {
+  box-shadow: 1px 1px; }
 
 .recipe_list {
   display: flex;
@@ -138,7 +145,7 @@ p {
 
 .box {
   margin-top: 20px;
-  height: 550px;
+  height: 560px;
   width: 600px;
   background-color: rgba(255, 255, 255, 0.7); }
 
